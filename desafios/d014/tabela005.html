@@ -18,21 +18,40 @@
             border: 1px solid black;
         }
 
+        .area {
+            background-color: darkgray;
+        }
+
+        .media {
+            background-color: darkgray;
+        }
+        th {
+            
+            color: white;
+        }
+        #subtitulo {
+            color: black;
+        }
+
     </style>
 </head>
 <body>
     <table>
         <thead>
-            <tr>
-                <th>Área</th>
-                <th>Disciplinas</th>
-                <th>Notas Nota 1 Nota2</th>
-                <th rowspan="2">Media</th>
+            <tr class="area">
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Media</th>
+            </tr>
+            <tr class="area">
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="rowgroup" id="subtitulo">Exatas</th>
                 <td>Matemática</td>
                 <td>0,0</td>
                 <td>0,0</td>
@@ -56,12 +75,12 @@
                 <td>0,0</td>
                 <td>0,0</td>
             </tr>
-            <tr>
-                <th colspan="4">Media de Exatas</th>
+            <tr class="media">
+                <th colspan="4" scope="row">Media de Exatas</th>
                 <td>0,0</td>
             </tr>
             <tr>
-                <th rowspan="2">Humanas</th>
+                <th rowspan="2" scope="rowgroup" id="subtitulo">Humanas</th>
                 <td>Historia</td>
                 <td>0,0</td>
                 <td>0,0</td>
@@ -73,8 +92,8 @@
                 <td>0,0</td>
                 <td>0,0</td>
             </tr>
-            <tr>
-                <th colspan="4">Média de Humanas</th>
+            <tr class="media">
+                <th colspan="4" scope="row">Média de Humanas</th>
                 <td>0,0</td>
             </tr>
         </tbody>
