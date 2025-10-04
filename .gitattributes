@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 *
+=======
+# Auto detect text files and perform LF normalization
+* text=auto
+>>>>>>> 4cb52769e7e4af0cd853e000cfcf861ea549c0f7
